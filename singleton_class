@@ -5,7 +5,7 @@ class Main
   B o1 = B.st();          //object declaration
   B o2 = B.st();
   B o3 = B.st();
-  o1.id = 2;
+  o1.id = 2;              
   System.out.println(o1.id);
   System.out.println(o1.id);
   System.out.println(o1.id);
@@ -24,6 +24,6 @@ class B
  }
  public static B st()     /*an instance method to return the class object of class B (return-type B)*/
  {
-  return ob;              //return the object to class A 
+  return ob;              //return the object to class Main 
  }
 }

@@ -1,0 +1,29 @@
+class Main
+{
+ public static void main (String[] args) 
+ { 
+  B o1 = B.st();          //object declaration
+  B o2 = B.st();
+  B o3 = B.st();
+  o1.id = 2;
+  System.out.println(o1.id);
+  System.out.println(o1.id);
+  System.out.println(o1.id);
+  o3.id = 3;
+  System.out.println(o1.id);
+  System.out.println(o1.id);
+  System.out.println(o1.id);
+  }
+}
+class B
+{
+ static B ob = new B();   //static object to be accessed from the function st()
+ static int id = 1;
+ private B()              //private constructor
+ {
+ }
+ public static B st()     /*an instance method to return the class object of class B (return-type B)*/
+ {
+  return ob;              //return the object to class A 
+ }
+}

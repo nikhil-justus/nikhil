@@ -22,7 +22,7 @@ class B
  private B()              //private constructor
  {
  }
- public static B st()     /*an instance method to return the class object of class B (return-type B)*/
+ public static B st()     /*an instance method to return the class object of class B */
  {
   return ob;              //return the object to class Main 
  }

@@ -1,0 +1,21 @@
+public class Main
+{
+ public static void main(String[] args)
+ {
+  Car o1=new Car(); 
+  o1.make="Hyundai";
+  o1.year=2004;
+  o1=new Car();         // first object becomes abandoned
+  o1.make="BMW";
+  o1=null;              // second object becomes abandoned
+ }
+ void samp()
+ {
+   Car ob = new Car();  // out of scope
+ }
+} 
+class Car 
+{
+ public String make;
+ public int year;
+ }
